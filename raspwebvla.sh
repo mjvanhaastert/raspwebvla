@@ -20,14 +20,14 @@ echo "Installing apache2 , mysql server, phpmyadmin and client and all the plugi
 echo "###################################################################################"
 
 apt-get install apache2
-apt-get install php7.0-mysql php7.0-curl php7.0-json php7.0-cgi  php7.0 libapache2-mod-php7.0
+apt-get install php7.0-mysql php7.0-curl php7.0-json php7.0-cgi  php7.0 libapache2-mod-php7.0 mysql-client
 
 #The following commands set the MySQL root password to WebVla-01! when you install the mysql-server package.
 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password WebVla-01!'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password WebVla-01!'
 
-apt-get install mysql-server mysql-client
+apt-get install mysql-server
 mysql_secure_installation
 apt-get install phpmyadmin
 
