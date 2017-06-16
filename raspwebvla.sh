@@ -58,8 +58,8 @@ echo "Then downloading the drupal core files, modules and civicrm"
 echo "###################################################################################"
 echo "###################################################################################"
 
-sudo mkdir /home/civicrm
-cd /home/civicrm
+sudo mkdir /home/ubuntu/civicrm
+cd /home/ubuntu/civicrm
 sudo wget https://download.civicrm.org/civicrm-4.7.20-drupal.tar.gz
 sudo tar -xvzf civicrm-4.7.20-drupal.tar.gz
 wget https://download.civicrm.org/civicrm-4.7.20-l10n.tar.gz
