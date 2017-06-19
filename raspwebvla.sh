@@ -12,8 +12,7 @@ clear
 echo "###################################################################################"
 echo "###################################################################################"
 echo "Please be Patient: Installation will start now.......and it will take some time :)"
-echo "You will be asked to setup a password for mysql and answer some questions"
-echo "So keep a pen and paper by hand to write stuff down"
+echo "Keep a pen and paper by hand to write stuff down"
 echo "###################################################################################"
 echo "###################################################################################"
 
@@ -28,6 +27,7 @@ clear
 echo "###################################################################################"
 echo "###################################################################################"
 echo "Installing apache2 , mysql server, phpmyadmin and client and all the plugins needed"
+echo "It will ask you to make a username and password for mysql"
 echo "###################################################################################"
 echo "###################################################################################"
 
@@ -42,8 +42,8 @@ clear
 
 echo "###################################################################################"
 echo "###################################################################################"
-echo "phpmyadmin is install and can be accessed by typing in the ip of the webserver"
-echo "The username of phpmyadmin is root and the password you created"
+echo "phpmyadmin is installed and can be accessed by typing in the ip of the webserver"
+echo "The username of phpmyadmin is root and the password you what you created"
 echo "###################################################################################"
 echo "###################################################################################"
 
@@ -53,8 +53,7 @@ clear
 
 echo "###################################################################################"
 echo "###################################################################################"
-echo "Creating folders in the /home/ubuntu"
-echo "Then downloading the drupal core files, modules and civicrm"
+echo "Creating folders in the /home/ubuntu and downloading all the files you need for it"
 echo "###################################################################################"
 echo "###################################################################################"
 
