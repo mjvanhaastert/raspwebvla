@@ -31,10 +31,10 @@ echo "It will ask you to make a username and password for mysql"
 echo "###################################################################################"
 echo "###################################################################################"
 
-sudo apt-get install apache2
-sudo apt-get install mysql-server mysql-client
-sudo apt-get install php7.0-mysql php7.0-curl php7.0-json php7.0-cgi  php7.0 libapache2-mod-php7.0
-apt-get install phpmyadmin
+sudo apt-get -y --force-yes install apache2
+sudo apt-get -y --force-yes install mysql-server mysql-client
+sudo apt-get -y --force-yes install php7.0-mysql php7.0-curl php7.0-json php7.0-cgi  php7.0 libapache2-mod-php7.0
+sudo apt-get -y --force-yes install phpmyadmin
 
 mysql_secure_installation
 
