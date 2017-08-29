@@ -73,13 +73,13 @@ sudo rm -r drupal-7.55.tar.gz
 cd drupal-7.55/profiles/standard/translations
 sudo wget ftp.drupal.org/files/translations/7.x/drupal/drupal-7.55.nl.po
 cd /home/ubuntu/modules
-sudo wget https://ftp.drupal.org/files/projects/ckeditor-7.x-1.17.tar.gz
-sudo wget https://ftp.drupal.org/files/projects/views-7.x-3.16.tar.gz
-sudo wget https://ftp.drupal.org/files/projects/ctools-7.x-1.12.tar.gz
+sudo wget https://ftp.drupal.org/files/projects/ckeditor-7.x-1.9.tar.gz
+sudo wget https://ftp.drupal.org/files/projects/views-7.x-3.8.tar.gz
+sudo wget https://ftp.drupal.org/files/projects/ctools-7.x-1.9.tar.gz
 sudo wget https://ftp.drupal.org/files/projects/rules-7.x-2.10.tar.gz
 sudo wget https://ftp.drupal.org/files/projects/webform-7.x-4.15.tar.gz
 sudo wget https://ftp.drupal.org/files/projects/webform_civicrm-7.x-4.18.tar.gz
-sudo wget https://ftp.drupal.org/files/projects/options_element-7.x-1.12.tar.gz
+sudo wget https://ftp.drupal.org/files/projects/options_element-7.x-1.9.tar.gz
 sudo wget https://ftp.drupal.org/files/projects/webform_layout-7.x-2.3.tar.gz
 tar -xvzf *
 
