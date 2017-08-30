@@ -33,7 +33,7 @@ echo "##########################################################################
 
 sudo apt-get -y --force-yes install apache2
 sudo apt-get -y --force-yes install mysql-server mysql-client
-sudo apt-get -y --force-yes install php7.0-mysql php7.0-curl php7.0-json php7.0-cgi  php7.0 libapache2-mod-php7.0
+sudo apt-get -y --force-yes install php7.1-mysql php7.1-curl php7.1-json php7.1-cgi  php7.1 libapache2-mod-php7.1
 sudo apt-get -y --force-yes install phpmyadmin
 
 mysql_secure_installation
@@ -59,19 +59,19 @@ echo "##########################################################################
 
 sudo mkdir /home/ubuntu/civicrm
 cd /home/ubuntu/civicrm
-sudo wget https://download.civicrm.org/civicrm-4.7.20-drupal.tar.gz
-sudo tar -xvzf civicrm-4.7.20-drupal.tar.gz
-wget https://download.civicrm.org/civicrm-4.7.20-l10n.tar.gz
-sudo tar xvzf civicrm-4.7.20-l10n.tar.gz
-rm -r civicrm-4.7.20-drupal.tar.gz civicrm-4.7.20-l10n.tar.gz
+sudo wget https://download.civicrm.org/civicrm-4.7.23-drupal.tar.gz
+sudo tar -xvzf civicrm-4.7.23-drupal.tar.gz
+wget https://download.civicrm.org/civicrm-4.7.23-l10n.tar.gz
+sudo tar xvzf civicrm-4.7.23-l10n.tar.gz
+rm -r civicrm-4.7.23-drupal.tar.gz civicrm-4.7.23-l10n.tar.gz
 sudo mkdir /home/ubuntu/drupal
 sudo mkdir /home/ubuntu/modules
 cd /home/ubuntu/drupal/
-sudo wget https://ftp.drupal.org/files/projects/drupal-7.55.tar.gz
-sudo tar -xvzf drupal-7.55.tar.gz
-sudo rm -r drupal-7.55.tar.gz
-cd drupal-7.55/profiles/standard/translations
-sudo wget ftp.drupal.org/files/translations/7.x/drupal/drupal-7.55.nl.po
+sudo wget https://ftp.drupal.org/files/projects/drupal-7.56.tar.gz
+sudo tar -xvzf drupal-7.56.tar.gz
+sudo rm -r drupal-7.56.tar.gz
+cd drupal-7.56/profiles/standard/translations
+sudo wget ftp.drupal.org/files/translations/7.x/drupal/drupal-7.56.nl.po
 cd /home/ubuntu/modules
 sudo wget https://ftp.drupal.org/files/projects/ckeditor-7.x-1.9.tar.gz
 sudo wget https://ftp.drupal.org/files/projects/views-7.x-3.8.tar.gz
@@ -92,7 +92,7 @@ echo "##########################################################################
 cd /home/ubuntu/civicrm/
 sudo mv -r civicrm /home/ubuntu/drupal/modules
 sudo mv -r ckeditor views ctools rules webform webform_civicrm options_element webform_layout -t /home/ubuntu/drupal/modules
-cd /home/ubuntu/drupal/drupal-7.55
+cd /home/ubuntu/drupal/drupal-7.56
 sudo mv -r * /var/www/html
 
 clear
